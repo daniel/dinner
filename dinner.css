@@ -1,0 +1,77 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  margin: 50px 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#outer {
+  width: 90%;
+  margin: 0 auto;    
+}
+
+.dish {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.dish .name {
+  display: inline-block;
+  width: 70%;
+  font-size: 1.4em;
+}
+
+.dish .score {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #777;
+}
+
+.dish.selected {
+  background-color: yellow;
+}
+
+.dish.selected .score {
+  color: black;
+}
+
+.details.name {
+
+}
+
+.details, .none {
+  font-weight: bold;
+  font-size: 1.4em;
+  border-style: dashed none none none;
+  border-color: #ccc;
+  border-width: 4px;
+  margin: 50px 10px;
+  padding: 10px 0px;
+}
+
+.name {
+  margin-bottom: 0.4em;
+}
+
+.none {
+  color: #777;
+}
+
+.inc {
+  cursor: pointer;
+}
+
+.add-dish {
+  margin-top: 1em;
+}
+.add-dish .name {
+  margin-bottom: 0;
+}

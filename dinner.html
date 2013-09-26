@@ -1,0 +1,47 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dinner</title>
+</head>
+
+<body>
+  <div id="outer">
+    <h1>What's for dinner?</h1>
+    {{> dinner}}
+  </div>
+</body>
+
+<template name="dinner">
+  <div class="dishes">
+    {{#each Dishes}}
+      {{> dish}}
+    {{/each}}
+
+    <div class="add-dish">
+      <input type="text" class="name" id="js-new-dish-name" placeholder="Name of dish">
+      <input type="button" class="add btn btn-success" name="" value="Add">
+    </div>
+
+
+  </div>
+
+  {{#if selected_name}}
+  <div class="details">
+    <div class="name">{{selected_name}}</div>
+    <input type="button" class="inc btn btn-primary" value="We just ate this" />
+    <input type="button" class="reset btn btn-warning" value="Reset" />
+    <input type="button" class="remove btn btn-danger" value="Remove" />
+  </div>
+  {{/if}}
+
+  {{#unless selected_name}}
+  <div class="none">Click a dish to select</div>
+  {{/unless}}
+</template>
+
+<template name="dish">
+  <div class="dish {{selected}}">
+    <span class="name">{{name}}</span>
+    <span class="score">{{score}} time(s)</span>
+  </div>
+</template>
+
