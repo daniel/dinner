@@ -6,7 +6,6 @@ if Meteor.isClient
         score: 1
         name: 1
 
-
   Template.dinner.selected_name = ->
     dish = Dishes.findOne(Session.get("selected_dish"))
     dish and dish.name

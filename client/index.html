@@ -1,15 +1,3 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dinner</title>
-</head>
-
-<body>
-  <div id="outer">
-    <h1>What's for dinner?</h1>
-    {{> dinner}}
-  </div>
-</body>
-
 <template name="dinner">
   <div class="dishes">
     {{#each Dishes}}
@@ -20,7 +8,6 @@
       <input type="text" class="name" id="js-new-dish-name" placeholder="Name of dish">
       <input type="button" class="add btn btn-success" name="" value="Add">
     </div>
-
 
   </div>
 
@@ -36,12 +23,5 @@
   {{#unless selected_name}}
   <div class="none">Click a dish to select</div>
   {{/unless}}
-</template>
-
-<template name="dish">
-  <div class="dish {{selected}}">
-    <span class="name">{{name}}</span>
-    <span class="score">{{score}} time(s)</span>
-  </div>
 </template>
 
