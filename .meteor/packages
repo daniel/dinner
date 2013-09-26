@@ -10,3 +10,5 @@ preserve-inputs
 random
 coffeescript
 bootstrap
+accounts-ui
+accounts-facebook
