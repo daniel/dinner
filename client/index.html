@@ -5,8 +5,15 @@
     {{/each}}
 
     <div class="add-dish">
-      <input type="text" class="name" id="js-new-dish-name" placeholder="Name of dish">
-      <input type="button" class="add btn btn-success" name="" value="Add">
+      <div class="row collapse">
+        <div class="small-10 columns">
+          <input type="text" class="name" id="js-new-dish-name" placeholder="Name of dish">          
+        </div>
+        <div class="small-2 columns">
+          <input type="button" class="add button prefix success" name="" value="Add">
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -14,9 +21,9 @@
   {{#if selected_name}}
   <div class="details">
     <div class="name">{{selected_name}}</div>
-    <input type="button" class="inc btn btn-primary" value="We just ate this" />
-    <input type="button" class="reset btn btn-warning" value="Reset" />
-    <input type="button" class="remove btn btn-danger" value="Remove" />
+    <input type="button" class="inc tiny button" value="We just ate this" />
+    <input type="button" class="reset tiny button secondary" value="Reset" />
+    <input type="button" class="remove tiny button alert" value="Remove" />
   </div>
   {{/if}}
 

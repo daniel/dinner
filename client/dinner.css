@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   margin: 1rem 0;
   padding: 0;
   -webkit-user-select: none;
@@ -55,22 +55,16 @@ h1 {
   color: black;
 }
 
-.details.name {
-
+.details .name {
+  font-size: 1rem;
+  margin: 1rem 0;
 }
 
 .details, .none {
   font-weight: bold;
   font-size: 1.4rem;
-  border-style: dashed none none none;
-  border-color: #ccc;
-  border-width: 4px;
-  margin: 50px 10px;
-  padding: 10px 0px;
-}
-
-.name {
-  margin-bottom: 0.4rem;
+  margin: 0;
+  border-top: 4px solid #eee;
 }
 
 .none {
@@ -83,7 +77,4 @@ h1 {
 
 .add-dish {
   margin-top: 1rem;
-}
-.add-dish .name {
-  margin-bottom: 0;
 }
