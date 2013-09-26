@@ -1,6 +1,11 @@
 html {
   font-size: 100%;
 }
+
+@-ms-viewport{
+  width: device-width;
+}
+
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
