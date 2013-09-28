@@ -56,10 +56,10 @@ table {
 }
 
 .details, .none {
-  font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin: 0;
   border-top: 4px solid #eee;
+  padding-top: 8px;
 }
 
 .none {
