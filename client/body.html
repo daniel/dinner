@@ -1,8 +1,12 @@
 <body>
   <div id="outer">
   	{{loginButtons}}
-    <h1>What's for dinner?</h1>
-    {{> dinner}}
+
+    {{#if currentUser}}
+      {{> dinner}}
+        {{else}}
+      {{> not_logged_in}}
+    {{/ if}}
   </div>
 </body>
 

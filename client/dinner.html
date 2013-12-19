@@ -1,5 +1,8 @@
 <template name="dinner">
+  <h1>What's for dinner?</h1>
+
   <div class="dishes">
+
     <table>
     {{#each Dishes}}
       {{> dish}}
@@ -9,7 +12,7 @@
     <div class="add-dish">
       <div class="row collapse">
         <div class="small-10 columns">
-          <input type="text" class="name" id="js-new-dish-name" placeholder="Name of dish">          
+          <input type="text" class="name" id="js-new-dish-name" placeholder="Name of dish">
         </div>
         <div class="small-2 columns">
           <input type="button" class="add button prefix success" name="" value="Add">

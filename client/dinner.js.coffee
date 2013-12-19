@@ -1,7 +1,7 @@
 Dishes = new Meteor.Collection("dishes")
 
 Template.dinner.Dishes = ->
-  Dishes.find {},
+  Dishes.find {user_id: Meteor.userId()},
     sort:
       score: 1
       name: 1
@@ -18,7 +18,8 @@ Template.dinner.events "click input.add": ->
   return unless name
   Dishes.insert
     name: name
-    score: 0 
+    score: 0
+    user_id: Meteor.userId()
   $('#js-new-dish-name').val('')
 
 Template.dinner.events "click input.inc": ->
