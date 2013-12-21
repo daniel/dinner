@@ -1,8 +1,8 @@
 Dishes = new Meteor.Collection("dishes")
-Meteor.subscribe('dishes')
+Meteor.subscribe 'dishes', Meteor.userId()
 
 Template.dinner.Dishes = ->
-  Dishes.find {user_id: Meteor.userId()},
+  Dishes.find {},
     sort:
       score: 1
       name: 1

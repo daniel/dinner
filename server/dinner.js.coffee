@@ -1,4 +1,4 @@
 Dishes = new Meteor.Collection("dishes")
 
-Meteor.publish "dishes", ->
-  Dishes.find()
+Meteor.publish "dishes", (user_id) ->
+  Dishes.find({user_id: user_id})
