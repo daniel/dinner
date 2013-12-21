@@ -1,4 +1,5 @@
 Dishes = new Meteor.Collection("dishes")
+Meteor.subscribe('dishes')
 
 Template.dinner.Dishes = ->
   Dishes.find {user_id: Meteor.userId()},
