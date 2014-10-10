@@ -10,5 +10,5 @@ random
 coffeescript
 accounts-ui
 accounts-facebook
-foundation
+ewall:foundation@4.3.2
 accounts-github
