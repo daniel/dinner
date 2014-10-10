@@ -46,7 +46,6 @@ oauth2@1.1.0
 oauth@1.1.0
 observe-sequence@1.0.2
 ordered-dict@1.0.0
-preserve-inputs@1.0.0
 random@1.0.0
 reactive-dict@1.0.2
 reactive-var@1.0.1
